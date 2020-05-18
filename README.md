@@ -1,5 +1,5 @@
 # Dog-Breed-Classifier
-This project was created in order to help identify dog breeds from any image that contains dog. The data set is one from sklearn and contains 8351 dog images in 133 categories. The project is based on Convolutional Neural network (CNN or ConvNet). First i build CNN from scratch. The accuracy of the model was less than 10% which is very low and not acceptable. The goal is to classify images of dogs according to their breed.
+This project was created in order identify dog breeds from any image that contains dog. The data set is one from sklearn and contains 8351 dog images in 133 categories. The project is based on Convolutional Neural network (CNN or ConvNet). First i build CNN from scratch. The accuracy of the model was less than 10% which is very low and not acceptable. The goal is to classify images of dogs according to their breed.
 
 
 ### The Road Ahead
