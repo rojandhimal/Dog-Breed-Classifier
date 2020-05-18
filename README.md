@@ -103,3 +103,5 @@ To reduce training time without sacrificing accuracy, Bottleneck features from a
 ### Testing
 <img src="images/result2.png">
 
+<img src="images/result.PNG">
+
