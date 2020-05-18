@@ -2,7 +2,7 @@
 
 This project looks to implement a deep learning model in order to classify dog breeds from labeled images of dogs. Using deep learning with convolutional neural networks (CNNs) in particular, we will build both a scratch-made CNN as well as using transfer learning to implement a CNN that uses the pre-created Inception architecture.
 
-For more details on this project, please check out this Medium blog post: hhttps://medium.com/@rojandhimal1/cnn-and-transfer-learning-for-dog-breed-classification-34de15596cdc
+For more details on this project, please check out this Medium blog post: https://medium.com/@rojandhimal1/cnn-and-transfer-learning-for-dog-breed-classification-34de15596cdc
 
 The blog post is outlined as follows:
 - Introduction
