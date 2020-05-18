@@ -13815,6 +13815,30 @@ $$<p>Here, <code>nb_samples</code> is the number of samples, or number of images
 <li>Relu activation function was used for all other layers except the output layer.</li>
 <li>Softmax Activation function is used in output layer </li>
 </ul>
+<h1 id="Layer-(type)-----------------Output-Shape--------------Param-#---">Layer (type)                 Output Shape              Param #   <a class="anchor-link" href="#Layer-(type)-----------------Output-Shape--------------Param-#---">&#182;</a></h1><p>conv2d_1 (Conv2D)            (None, 224, 224, 16)      208</p>
+<hr>
+<p>max_pooling2d_2 (MaxPooling2 (None, 112, 112, 16)      0</p>
+<hr>
+<p>conv2d_2 (Conv2D)            (None, 112, 112, 32)      2080</p>
+<hr>
+<p>max_pooling2d_3 (MaxPooling2 (None, 56, 56, 32)        0</p>
+<hr>
+<p>conv2d_3 (Conv2D)            (None, 56, 56, 64)        8256</p>
+<hr>
+<p>max_pooling2d_4 (MaxPooling2 (None, 28, 28, 64)        0</p>
+<hr>
+<p>dropout_1 (Dropout)          (None, 28, 28, 64)        0</p>
+<hr>
+<p>flatten_2 (Flatten)          (None, 50176)             0</p>
+<hr>
+<p>dense_1 (Dense)              (None, 512)               25690624</p>
+<hr>
+<p>dropout_2 (Dropout)          (None, 512)               0</p>
+<hr>
+<h1 id="dense_2-(Dense)--------------(None,-133)---------------68229-----">dense_2 (Dense)              (None, 133)               68229     <a class="anchor-link" href="#dense_2-(Dense)--------------(None,-133)---------------68229-----">&#182;</a></h1><p>Total params: 25,769,397
+Trainable params: 25,769,397
+Non-trainable params: 0</p>
+<hr>
 
 </div>
 </div>
