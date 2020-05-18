@@ -15432,57 +15432,6 @@ And It looks like a ages/train/096.Labrador_retriever
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">predict_breed</span><span class="p">(</span><span class="s2">&quot;images/Welsh_springer_spaniel_08203.jpg&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">error</span>                                     Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-95-76647c5eb70d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>predict_breed<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;images/Welsh_springer_spaniel_08203.jpg&#34;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-75-fd4a05e2d832&gt;</span> in <span class="ansi-cyan-fg">predict_breed</span><span class="ansi-blue-fg">(img_path)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> 
-<span class="ansi-green-intense-fg ansi-bold">      9</span> <span class="ansi-green-fg">def</span> predict_breed<span class="ansi-blue-fg">(</span>img_path<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>display_img<span class="ansi-blue-fg">(</span>img_path<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span>     <span class="ansi-green-fg">if</span> dog_detector<span class="ansi-blue-fg">(</span>img_path<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span>         print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Dog Detected!&#34;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-75-fd4a05e2d832&gt;</span> in <span class="ansi-cyan-fg">display_img</span><span class="ansi-blue-fg">(img_path)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">def</span> display_img<span class="ansi-blue-fg">(</span>img_path<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     img <span class="ansi-blue-fg">=</span> cv2<span class="ansi-blue-fg">.</span>imread<span class="ansi-blue-fg">(</span>img_path<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg">     </span>cv_rgb <span class="ansi-blue-fg">=</span> cv2<span class="ansi-blue-fg">.</span>cvtColor<span class="ansi-blue-fg">(</span>img<span class="ansi-blue-fg">,</span> cv2<span class="ansi-blue-fg">.</span>COLOR_BGR2RGB<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>     imgplot <span class="ansi-blue-fg">=</span> plt<span class="ansi-blue-fg">.</span>imshow<span class="ansi-blue-fg">(</span>cv_rgb<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span>     <span class="ansi-green-fg">return</span> imgplot
-
-<span class="ansi-red-fg">error</span>: /tmp/build/80754af9/opencv_1512491964794/work/modules/imgproc/src/color.cpp:11016: error: (-215) scn == 3 || scn == 4 in function cvtColor
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
