@@ -1,71 +1,42 @@
-# Dog-Breed-Classifier
-This project was created in order identify dog breeds from any image that contains dog. The data set is one from sklearn and contains 8351 dog images in 133 categories. The project is based on Convolutional Neural network (CNN or ConvNet). First i build CNN from scratch. The accuracy of the model was less than 10% which is very low and not acceptable. The goal is to classify images of dogs according to their breed.
+# Using Deep Learning to Classify Dog Breeds from Images
 
+This project looks to implement a deep learning model in order to classify dog breeds from labeled images of dogs. Using deep learning with convolutional neural networks (CNNs) in particular, we will build both a scratch-made CNN as well as using transfer learning to implement a CNN that uses the pre-created Inception architecture.
 
-### The Road Ahead
+For more details on this project, please check out this Medium blog post: hhttps://medium.com/@rojandhimal1/cnn-and-transfer-learning-for-dog-breed-classification-34de15596cdc
 
-We break the notebook into separate steps.  Feel free to use the links below to navigate the notebook.
+The blog post is outlined as follows:
+- Introduction
+- Project Overview
+  - Problem Statement
+  - Datasets 
+  - Evaluation Metrics
+- Creating Our Deep Learning Model
+  - Data Pre-Processing
+  - Implementation: CNN Built from Scratch
+  - Refinement: CNN Built Using Transfer Learning
+- Analyzing the Results
+  - Evaluation & Validation
+- Conclusion
+  - Improvement
+  
+## Installations
 
-* [Step 0](#step0): Import Datasets
-* [Step 1](#step1): Detect Humans
-* [Step 2](#step2): Detect Dogs
-* [Step 3](#step3): Create a CNN to Classify Dog Breeds (from Scratch)
-* [Step 4](#step4): Use a CNN to Classify Dog Breeds (using Transfer Learning)
-* [Step 5](#step5): Create a CNN to Classify Dog Breeds (using Transfer Learning)
-* [Step 6](#step6): Write your Algorithm
-* [Step 7](#step7): Test Your Algorithm
+The project makes use primarily of Python code within a Jupyter Notebook. For datasets, the project uses **Scikit-Learn** to import dog images as well as **glob** for the human face images. For the CNN architecture, this project uses **Keras** backed by TensorFlow.
 
----
-<a id='step0'></a>
-## Step 0: Import Datasets
+PLEASE NOTE that this work was completed in a GPU-enabled workspace provided by Udacity. It is not recommended to run this project on a general CPU due to computational limitations.
 
-### Import Dog Dataset
+## File Descriptions
 
-we import a dataset of dog images provided in workspace.  We populate a few variables through the use of the `load_files` function from the scikit-learn library:
-- `train_files`, `valid_files`, `test_files` - numpy arrays containing file paths to images
-- `train_targets`, `valid_targets`, `test_targets` - numpy arrays containing onehot-encoded classification labels 
-- `dog_names` - list of string-valued dog breed names for translating labels
+This tree describes all the files included as part of this project. Due to file size restrictions, some files (like the bottleneck features) have not been uploaded to this GitHub repository.
+- **images**: This file contains all the practice images used within the Jupyter notebook as well as other images that Udacity included as samples from the notebook.
+- **saved_models**: This file contains the saved models as run and created from the code within the Jupyter notebook.
+- **dog_app.ipynb**: This notebook contains all the work completed for this project.
+- **dog_app.html**: This is a basic HTML file output of the same Jupyter notebook above.
+- **LICENSE.txt**: This contains the license information for items used within this project.
 
-### Detect Humans
-Human face is detected using opencv haarcascade feature. frontalface.xml file was user to detect human face from the image
+## Acknowledgements
 
-### Detect Dogs
-Pre-trained ResNet-50 model is used to detect dogs in images
-
-### Create a CNN to Classify Dog Breeds (from Scratch)
-We use Tensorflow keras to build CNN architecture.
-Following CNN Architecture was build 
-conv2d_1 (Conv2D)            (None, 224, 224, 16)      208       
-_________________________________________________________________
-max_pooling2d_2 (MaxPooling2 (None, 112, 112, 16)      0         
-_________________________________________________________________
-conv2d_2 (Conv2D)            (None, 112, 112, 32)      2080      
-_________________________________________________________________
-max_pooling2d_3 (MaxPooling2 (None, 56, 56, 32)        0         
-_________________________________________________________________
-conv2d_3 (Conv2D)            (None, 56, 56, 64)        8256      
-_________________________________________________________________
-max_pooling2d_4 (MaxPooling2 (None, 28, 28, 64)        0         
-_________________________________________________________________
-dropout_1 (Dropout)          (None, 28, 28, 64)        0         
-_________________________________________________________________
-flatten_2 (Flatten)          (None, 50176)             0         
-_________________________________________________________________
-dense_1 (Dense)              (None, 512)               25690624  
-_________________________________________________________________
-dropout_2 (Dropout)          (None, 512)               0         
-_________________________________________________________________
-dense_2 (Dense)              (None, 133)               68229     
-
-=================================================================
-
-Total params: 25,769,397
-Trainable params: 25,769,397
-Non-trainable params: 0
-_________________________________________________
-
-### Use a CNN to Classify Dog Breeds (using Transfer Learning)
-To reduce training time without sacrificing accuracy, Bottleneck features from a different pre-trained model VGG16, Xception ResNet50  is used in this project. 
+A very special thanks to Udacity for all the inputs, datasets, and guidance provided for this project!!
 
 ### Testing
 <img src="images/result2.png">
